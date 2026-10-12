@@ -310,7 +310,9 @@
                     </p>
                     <ul>
                         <li>Built MCP server featuring two AI Agent tools (Environment Analyzer and SSP Analyzer) that integrate CosmosDB and external APIs for automated data analysis and retrieval.</li>
-                        <li>Built an AI-powered compliance assistant that reduced SSP review time from 40 hours to 10 minutes, directly supporting successful CMMC audit compliance.</li>
+                        <li>Led the design, architecture, and development of CAPCIS (Compliance Analytics Platform for CIS) from proof-of-concept through production, building a secure Azure-based data platform (CosmosDB, FedRAMP Azure OpenAI) with ETL pipelines supporting RPA ingestion of 150+ CIO environments, enabling NLP-driven compliance analytics that reduced SSP review time from 40 hours to 10 minutes and dramatically accelerated the speed and quality of Design Engagement Request deliverables.</li>
+                        <li>Built an internal container platform that deploys Python web applications to a shared VM using a declarative manifest model, automated GitLab CI/CD pipelines with SAST, secret, and dependency scanning, Keycloak SSO authentication via oauth2-proxy, and nginx reverse proxying, plus AI-powered compliance tooling, including an LLM-based SSP assessor that pulls controls from ServiceNow and evaluates CMMC Level 2 audit readiness.</li>
+                        <li>Developed a workflow to automate CrowdStrike, Splunk, and Nessus on DGX Spark devices, including creating and executing performance and stress tests using Sysbench, FIO, perf, and stress-ng.</li>
                         <li>Created and deployed Python-based automation programs that integrated various cybersecurity platforms, including ticketing software, supplier assessment tools, and supplier rating tools, improving workflow efficiency from weeks to days.</li>
                         <li>Assess, implement, and manage security protocols for Enterprise and SaaS applications during onboarding and annual reviews, ensuring compliance with enterprise security policies and industry standards, such as NIST 800-53 and NIST 800-171.</li>
                     </ul>
@@ -376,6 +378,33 @@
                         <p>Administer manufacture library, provide IT support, & create documentation for in-house developed tools.</p>
                     </p>
                 </div>
+
+            </section>
+
+            <hr>
+            <section id="projects">
+                <header> <span class="fa fa-lg fa-microchip"></span>
+                     <h2>projects</h2>
+                </header>
+                <div>
+                    <h3><em>Bare-Metal STM32 Firmware Framework</em>,
+              <a href="https://github.com/la4gia/embedded_development_framework">GitHub</a>
+              </h3>
+                    <ul>
+                        <li>Created a multi-board bare-metal firmware framework for STM32 (Cortex-M4 and Cortex-M55) using register-level C with no HAL/LL, a CMake/Ninja cross-compile build system, and a scripted flash/debug workflow.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><em>Hardware Hacking Research</em>,
+              <a href="https://github.com/la4gia/hardware_hacking_notes">GitHub</a>
+              </h3>
+                    <ul>
+                        <li>Assessed a TP-Link TL-WR841N router end to end: identified UART and SPI flash interfaces on the PCB, obtained an unauthenticated root shell, dumped and carved the firmware with a CH341a programmer, flashrom, and binwalk, and reverse engineered shared libraries in Ghidra to recover a hardcoded DES key protecting configuration data.</li>
+                        <li>Cracked recovered admin password hashes with hashcat and documented weak cryptography, shared credentials, an unvalidated <code>system()</code> call path (command injection risk), and outdated kernel and SSH components.</li>
+                        <li>Performed hardware recon and teardown of a Belkin WeMo Switch (Ralink RT5350F), mapping its chips and debug interfaces using a logic analyzer (Sigrok PulseView) and USB-to-UART adapter.</li>
+                    </ul>
+                </div>
+            </section>
 
             <hr>
             <section id="education">
